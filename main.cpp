@@ -1,27 +1,20 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-// تعریف ساختار Person
-struct Person {
-    string name;
-    int age;
-    double height;
-};
+int fibonacci(int n) {
+    if (n <= 1) {
+        return n;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
 
 int main() {
-    // ایجاد یک نمونه از ساختار Person
-    Person person1;
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
 
-    // مقداردهی به اعضای ساختار
-    person1.name = "Ali";
-    person1.age = 25;
-    person1.height = 1.78;
-
-    // چاپ اطلاعات شخص
-    cout << "Name: " << person1.name << endl;
-    cout << "Age: " << person1.age << endl;
-    cout << "Height: " << person1.height << " meters" << endl;
+    cout << "Fibonacci number " << number << " is " << fibonacci(number) << endl;
 
     return 0;
 }
