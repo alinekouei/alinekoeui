@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1749390365 source:c:\users\ehsan\desktop\dars\file\main.cpp
-	<iostream>
-	<fstream>
-	<string>
-
